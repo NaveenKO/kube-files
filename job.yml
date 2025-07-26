@@ -1,0 +1,18 @@
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: myjob
+spec:
+  template:
+    metadata:
+      name: testjob
+    spec:
+      containers:
+        - name: con1
+          image: shaikmustafa/cycle
+          ports:
+            - containerPort: 80
+          command: ["/bin/bash","-c","apt update -y "]
+      restartPolicy: Never
+
