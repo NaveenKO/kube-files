@@ -1,7 +1,7 @@
 
 ---
 apiVersion: apps/v1
-kind: StatefullSet
+kind: StatefulSet
 metadata:
   name: myde
 spec:

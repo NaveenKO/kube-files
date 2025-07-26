@@ -1,0 +1,27 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: emptydir
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: paytm
+  template:
+    metadata:
+      labels:
+        app: paytm
+    spec:
+       containers:
+          - name: con2
+            image: nginx 
+            ports:
+              - containerPort: 80
+            command: ["/bin/bash", "-c" , " while true; do echo my name is naveen; sleep 50 ;done"]
+            volumeMounts:
+              - name: devops
+                mountPath: "/tmp/naveen"
+       volumes:
+         - name: devops
+           emptyDir: {}
