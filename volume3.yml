@@ -15,7 +15,7 @@ spec:
         app: paytm
     spec:
        containers:
-          - name: con-2
+          - name: con-2345
             image: nginx
             ports:
               - containerPort: 80
