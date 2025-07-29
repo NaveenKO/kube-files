@@ -9,7 +9,7 @@ spec:
       name: testjob
     spec:
       containers:
-        - name: con1
+        - name: co1
           image: shaikmustafa/cycle
           ports:
             - containerPort: 80
