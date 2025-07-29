@@ -2,7 +2,7 @@
 apiVersion: batch/v1
 kind: CronJob
 metadata:
-  name: myjob
+  name: myjob34
 spec:
   schedule: " * * * * * "
   jobTemplate:
@@ -10,7 +10,7 @@ spec:
       template:
         spec:
            containers:
-             - name: con1
+             - name: con78
                image: shaikmustafa/cycle
                ports:
                  - containerPort: 80
