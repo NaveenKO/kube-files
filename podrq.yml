@@ -6,7 +6,7 @@ metadata:
   namespace: naveen
 spec:
   containers:
-    - name: mycon
+    - name: mycon9
       image: shaikmustafa/cycle
       ports:
         - containerPort: 80
