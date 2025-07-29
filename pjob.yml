@@ -2,7 +2,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: myjob
+  name: myjob1
 spec:
   parallelism: 2
   activeDeadlineSeconds: 20
@@ -11,7 +11,7 @@ spec:
       name: testjob
     spec:
       containers:
-        - name: con1
+        - name: con4
           image: shaikmustafa/cycle
           ports:
             - containerPort: 80
