@@ -3,7 +3,7 @@
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  name: myde
+  name: myde74
 spec:
   selector:
     matchLabels:
@@ -14,7 +14,7 @@ spec:
         app: paytm
     spec:
       containers:
-        - name: con1
+        - name: con66
           image: shaikmustafa/dm
           ports:
             - containerPort: 80
